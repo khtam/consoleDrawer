@@ -1,0 +1,15 @@
+Launching the program (JRE installation assumed):
+run 'java Main' under ./target/classes/
+
+Special cases:
+1. Invalid command              -> prints error message and exits
+2. Command incomplete           -> prints error message and await for next input
+3. Out of range coordinates     -> prints error message and exits
+4. Fill color set as 'x'        -> prints error message and exits (assumption: x is not a valid colour)
+5. Drawing slant                -> prints error message and exits
+
+Edge cases:
+1. Drawing commands give same coordinates for both points -> draw dot (assumption: drawing dot is allowed)
+
+Assumption:
+1. Giving extra create command will not erase original canvas data, but reduce/expand the view of which user can draw
